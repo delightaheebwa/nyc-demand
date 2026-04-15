@@ -29,6 +29,7 @@ Fix the notebook code cell for the one-time local combined parquet build so it r
   - `Monthly cache ready in 0.0015s`
   - `Built once in 0.0030s`
   - `combined_rows 2`
+- Note: these timings are from a tiny synthetic dataset used to verify correctness only; real NYC monthly datasets will take materially longer.
 
 ## Final result
 - No errors in the updated code path.
