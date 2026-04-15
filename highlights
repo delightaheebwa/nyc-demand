@@ -1,2 +1,5 @@
 Schema health check. Before combining all these parquet month files from online, a schema health check is in order to avoid errors and even if i am not combining, this is still paramount for proper analysis
-Now i want to measure the tradeoff between combining it all in one df vs using the monnth split df
+I made a mistake thinking pandas could handle all those remote parquet files quickly as shwon in the image(it wasn't just slow... it didn't even work!)
+![alt text](image-1.png)
+Now moving on to duckdb. The biggest win is to stop doing full pandas reads from each URL and instead let a query engine scan parquet efficiently, then materialize to a DataFrame at the end.
+The other mistake i made was sticking to remote URLs instead of doing a one-time build of a local combined parquet. Even with DuckDB, the first build is still heavy, but you you only pay that cost once. After this, iteration speed improves a lot because network latency is gone.
