@@ -3,3 +3,5 @@ I made a mistake thinking pandas could handle all those remote parquet files qui
 ![alt text](image-1.png)
 Now moving on to duckdb. The biggest win is to stop doing full pandas reads from each URL and instead let a query engine scan parquet efficiently, then materialize to a DataFrame at the end.
 The other mistake i made was sticking to remote URLs instead of doing a one-time build of a local combined parquet. Even with DuckDB, the first build is still heavy, but you you only pay that cost once. After this, iteration speed improves a lot because network latency is gone.
+DuckDB got it done fairly quickly... just under 2 minutes for each parquet file!
+![alt text](image-3.png)
