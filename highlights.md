@@ -20,6 +20,12 @@ Fix the notebook code cell for the one-time local combined parquet build so it r
 - Used `SET preserve_insertion_order = false` for lower overhead in write path.
 - Used `COMPRESSION ZSTD` and `ROW_GROUP_SIZE 500000` for a balanced local analytical parquet output.
 
+## Reviewer follow-up fixes (robustness)
+- Issue: interrupted monthly downloads could leave partial parquet files that were later reused.
+  - Solution: download each month to `*.tmp` and atomically promote with `os.replace(...)`; clean up temp files on failure.
+- Issue: DuckDB connection cleanup only happened on success.
+  - Solution: wrap combine execution in `with duckdb.connect() as con:` so the connection always closes, including on exceptions.
+
 ## Verification performed
 - Ran an end-to-end smoke test using local `file://` parquet URLs:
   - Local monthly cache step succeeded.
