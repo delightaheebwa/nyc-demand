@@ -10,7 +10,7 @@ Fix the notebook code cell for the one-time local combined parquet build so it r
 
 ## Iteration 2 (robust architecture)
 - Switched flow to:
-  1. Materialize each month parquet locally once using `fsspec` + streamed copy.
+  1. Materialize each monthly parquet file locally once using `fsspec` + streamed copy.
   2. Run DuckDB combine from local parquet paths only.
 - Why: removes `httpfs` dependency and network overhead from iterative analysis after first local cache pass.
 
