@@ -1,0 +1,2 @@
+Schema health check. Before combining all these parquet month files from online, a schema health check is in order to avoid errors and even if i am not combining, this is still paramount for proper analysis
+Now i want to measure the tradeoff between combining it all in one df vs using the monnth split df

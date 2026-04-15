@@ -1,0 +1,312 @@
+=== jan ====
+<pyarrow._parquet.ParquetSchema object at 0x000002A274935900>
+required group field_id=-1 schema {
+  optional int32 field_id=-1 VendorID;
+  optional int64 field_id=-1 tpep_pickup_datetime (Timestamp(isAdjustedToUTC=false, timeUnit=microseconds, is_from_converted_type=false, force_set_converted_type=false));
+  optional int64 field_id=-1 tpep_dropoff_datetime (Timestamp(isAdjustedToUTC=false, timeUnit=microseconds, is_from_converted_type=false, force_set_converted_type=false));
+  optional int64 field_id=-1 passenger_count;
+  optional double field_id=-1 trip_distance;
+  optional int64 field_id=-1 RatecodeID;
+  optional binary field_id=-1 store_and_fwd_flag (String);
+  optional int32 field_id=-1 PULocationID;
+  optional int32 field_id=-1 DOLocationID;
+  optional int64 field_id=-1 payment_type;
+  optional double field_id=-1 fare_amount;
+  optional double field_id=-1 extra;
+  optional double field_id=-1 mta_tax;
+  optional double field_id=-1 tip_amount;
+  optional double field_id=-1 tolls_amount;
+  optional double field_id=-1 improvement_surcharge;
+  optional double field_id=-1 total_amount;
+  optional double field_id=-1 congestion_surcharge;
+  optional double field_id=-1 Airport_fee;
+  optional double field_id=-1 cbd_congestion_fee;
+}
+
+
+=== feb ====
+<pyarrow._parquet.ParquetSchema object at 0x000002A274EFE440>
+required group field_id=-1 schema {
+  optional int32 field_id=-1 VendorID;
+  optional int64 field_id=-1 tpep_pickup_datetime (Timestamp(isAdjustedToUTC=false, timeUnit=microseconds, is_from_converted_type=false, force_set_converted_type=false));
+  optional int64 field_id=-1 tpep_dropoff_datetime (Timestamp(isAdjustedToUTC=false, timeUnit=microseconds, is_from_converted_type=false, force_set_converted_type=false));
+  optional int64 field_id=-1 passenger_count;
+  optional double field_id=-1 trip_distance;
+  optional int64 field_id=-1 RatecodeID;
+  optional binary field_id=-1 store_and_fwd_flag (String);
+  optional int32 field_id=-1 PULocationID;
+  optional int32 field_id=-1 DOLocationID;
+  optional int64 field_id=-1 payment_type;
+  optional double field_id=-1 fare_amount;
+  optional double field_id=-1 extra;
+  optional double field_id=-1 mta_tax;
+  optional double field_id=-1 tip_amount;
+  optional double field_id=-1 tolls_amount;
+  optional double field_id=-1 improvement_surcharge;
+  optional double field_id=-1 total_amount;
+  optional double field_id=-1 congestion_surcharge;
+  optional double field_id=-1 Airport_fee;
+  optional double field_id=-1 cbd_congestion_fee;
+}
+
+
+=== mar ====
+<pyarrow._parquet.ParquetSchema object at 0x000002A274F04D40>
+required group field_id=-1 schema {
+  optional int32 field_id=-1 VendorID;
+  optional int64 field_id=-1 tpep_pickup_datetime (Timestamp(isAdjustedToUTC=false, timeUnit=microseconds, is_from_converted_type=false, force_set_converted_type=false));
+  optional int64 field_id=-1 tpep_dropoff_datetime (Timestamp(isAdjustedToUTC=false, timeUnit=microseconds, is_from_converted_type=false, force_set_converted_type=false));
+  optional int64 field_id=-1 passenger_count;
+  optional double field_id=-1 trip_distance;
+  optional int64 field_id=-1 RatecodeID;
+  optional binary field_id=-1 store_and_fwd_flag (String);
+  optional int32 field_id=-1 PULocationID;
+  optional int32 field_id=-1 DOLocationID;
+  optional int64 field_id=-1 payment_type;
+  optional double field_id=-1 fare_amount;
+  optional double field_id=-1 extra;
+  optional double field_id=-1 mta_tax;
+  optional double field_id=-1 tip_amount;
+  optional double field_id=-1 tolls_amount;
+  optional double field_id=-1 improvement_surcharge;
+  optional double field_id=-1 total_amount;
+  optional double field_id=-1 congestion_surcharge;
+  optional double field_id=-1 Airport_fee;
+  optional double field_id=-1 cbd_congestion_fee;
+}
+
+
+=== apr ====
+<pyarrow._parquet.ParquetSchema object at 0x000002A274EFC580>
+required group field_id=-1 schema {
+  optional int32 field_id=-1 VendorID;
+  optional int64 field_id=-1 tpep_pickup_datetime (Timestamp(isAdjustedToUTC=false, timeUnit=microseconds, is_from_converted_type=false, force_set_converted_type=false));
+  optional int64 field_id=-1 tpep_dropoff_datetime (Timestamp(isAdjustedToUTC=false, timeUnit=microseconds, is_from_converted_type=false, force_set_converted_type=false));
+  optional int64 field_id=-1 passenger_count;
+  optional double field_id=-1 trip_distance;
+  optional int64 field_id=-1 RatecodeID;
+  optional binary field_id=-1 store_and_fwd_flag (String);
+  optional int32 field_id=-1 PULocationID;
+  optional int32 field_id=-1 DOLocationID;
+  optional int64 field_id=-1 payment_type;
+  optional double field_id=-1 fare_amount;
+  optional double field_id=-1 extra;
+  optional double field_id=-1 mta_tax;
+  optional double field_id=-1 tip_amount;
+  optional double field_id=-1 tolls_amount;
+  optional double field_id=-1 improvement_surcharge;
+  optional double field_id=-1 total_amount;
+  optional double field_id=-1 congestion_surcharge;
+  optional double field_id=-1 Airport_fee;
+  optional double field_id=-1 cbd_congestion_fee;
+}
+
+
+=== may ====
+<pyarrow._parquet.ParquetSchema object at 0x000002A274EFF300>
+required group field_id=-1 schema {
+  optional int32 field_id=-1 VendorID;
+  optional int64 field_id=-1 tpep_pickup_datetime (Timestamp(isAdjustedToUTC=false, timeUnit=microseconds, is_from_converted_type=false, force_set_converted_type=false));
+  optional int64 field_id=-1 tpep_dropoff_datetime (Timestamp(isAdjustedToUTC=false, timeUnit=microseconds, is_from_converted_type=false, force_set_converted_type=false));
+  optional int64 field_id=-1 passenger_count;
+  optional double field_id=-1 trip_distance;
+  optional int64 field_id=-1 RatecodeID;
+  optional binary field_id=-1 store_and_fwd_flag (String);
+  optional int32 field_id=-1 PULocationID;
+  optional int32 field_id=-1 DOLocationID;
+  optional int64 field_id=-1 payment_type;
+  optional double field_id=-1 fare_amount;
+  optional double field_id=-1 extra;
+  optional double field_id=-1 mta_tax;
+  optional double field_id=-1 tip_amount;
+  optional double field_id=-1 tolls_amount;
+  optional double field_id=-1 improvement_surcharge;
+  optional double field_id=-1 total_amount;
+  optional double field_id=-1 congestion_surcharge;
+  optional double field_id=-1 Airport_fee;
+  optional double field_id=-1 cbd_congestion_fee;
+}
+
+
+=== jun ====
+<pyarrow._parquet.ParquetSchema object at 0x000002A274936C40>
+required group field_id=-1 schema {
+  optional int32 field_id=-1 VendorID;
+  optional int64 field_id=-1 tpep_pickup_datetime (Timestamp(isAdjustedToUTC=false, timeUnit=microseconds, is_from_converted_type=false, force_set_converted_type=false));
+  optional int64 field_id=-1 tpep_dropoff_datetime (Timestamp(isAdjustedToUTC=false, timeUnit=microseconds, is_from_converted_type=false, force_set_converted_type=false));
+  optional int64 field_id=-1 passenger_count;
+  optional double field_id=-1 trip_distance;
+  optional int64 field_id=-1 RatecodeID;
+  optional binary field_id=-1 store_and_fwd_flag (String);
+  optional int32 field_id=-1 PULocationID;
+  optional int32 field_id=-1 DOLocationID;
+  optional int64 field_id=-1 payment_type;
+  optional double field_id=-1 fare_amount;
+  optional double field_id=-1 extra;
+  optional double field_id=-1 mta_tax;
+  optional double field_id=-1 tip_amount;
+  optional double field_id=-1 tolls_amount;
+  optional double field_id=-1 improvement_surcharge;
+  optional double field_id=-1 total_amount;
+  optional double field_id=-1 congestion_surcharge;
+  optional double field_id=-1 Airport_fee;
+  optional double field_id=-1 cbd_congestion_fee;
+}
+
+
+=== jul ====
+<pyarrow._parquet.ParquetSchema object at 0x000002A274F03500>
+required group field_id=-1 schema {
+  optional int32 field_id=-1 VendorID;
+  optional int64 field_id=-1 tpep_pickup_datetime (Timestamp(isAdjustedToUTC=false, timeUnit=microseconds, is_from_converted_type=false, force_set_converted_type=false));
+  optional int64 field_id=-1 tpep_dropoff_datetime (Timestamp(isAdjustedToUTC=false, timeUnit=microseconds, is_from_converted_type=false, force_set_converted_type=false));
+  optional int64 field_id=-1 passenger_count;
+  optional double field_id=-1 trip_distance;
+  optional int64 field_id=-1 RatecodeID;
+  optional binary field_id=-1 store_and_fwd_flag (String);
+  optional int32 field_id=-1 PULocationID;
+  optional int32 field_id=-1 DOLocationID;
+  optional int64 field_id=-1 payment_type;
+  optional double field_id=-1 fare_amount;
+  optional double field_id=-1 extra;
+  optional double field_id=-1 mta_tax;
+  optional double field_id=-1 tip_amount;
+  optional double field_id=-1 tolls_amount;
+  optional double field_id=-1 improvement_surcharge;
+  optional double field_id=-1 total_amount;
+  optional double field_id=-1 congestion_surcharge;
+  optional double field_id=-1 Airport_fee;
+  optional double field_id=-1 cbd_congestion_fee;
+}
+
+
+=== aug ====
+<pyarrow._parquet.ParquetSchema object at 0x000002A2737F29C0>
+required group field_id=-1 schema {
+  optional int32 field_id=-1 VendorID;
+  optional int64 field_id=-1 tpep_pickup_datetime (Timestamp(isAdjustedToUTC=false, timeUnit=microseconds, is_from_converted_type=false, force_set_converted_type=false));
+  optional int64 field_id=-1 tpep_dropoff_datetime (Timestamp(isAdjustedToUTC=false, timeUnit=microseconds, is_from_converted_type=false, force_set_converted_type=false));
+  optional int64 field_id=-1 passenger_count;
+  optional double field_id=-1 trip_distance;
+  optional int64 field_id=-1 RatecodeID;
+  optional binary field_id=-1 store_and_fwd_flag (String);
+  optional int32 field_id=-1 PULocationID;
+  optional int32 field_id=-1 DOLocationID;
+  optional int64 field_id=-1 payment_type;
+  optional double field_id=-1 fare_amount;
+  optional double field_id=-1 extra;
+  optional double field_id=-1 mta_tax;
+  optional double field_id=-1 tip_amount;
+  optional double field_id=-1 tolls_amount;
+  optional double field_id=-1 improvement_surcharge;
+  optional double field_id=-1 total_amount;
+  optional double field_id=-1 congestion_surcharge;
+  optional double field_id=-1 Airport_fee;
+  optional double field_id=-1 cbd_congestion_fee;
+}
+
+
+=== sep ====
+<pyarrow._parquet.ParquetSchema object at 0x000002A27358A700>
+required group field_id=-1 schema {
+  optional int32 field_id=-1 VendorID;
+  optional int64 field_id=-1 tpep_pickup_datetime (Timestamp(isAdjustedToUTC=false, timeUnit=microseconds, is_from_converted_type=false, force_set_converted_type=false));
+  optional int64 field_id=-1 tpep_dropoff_datetime (Timestamp(isAdjustedToUTC=false, timeUnit=microseconds, is_from_converted_type=false, force_set_converted_type=false));
+  optional int64 field_id=-1 passenger_count;
+  optional double field_id=-1 trip_distance;
+  optional int64 field_id=-1 RatecodeID;
+  optional binary field_id=-1 store_and_fwd_flag (String);
+  optional int32 field_id=-1 PULocationID;
+  optional int32 field_id=-1 DOLocationID;
+  optional int64 field_id=-1 payment_type;
+  optional double field_id=-1 fare_amount;
+  optional double field_id=-1 extra;
+  optional double field_id=-1 mta_tax;
+  optional double field_id=-1 tip_amount;
+  optional double field_id=-1 tolls_amount;
+  optional double field_id=-1 improvement_surcharge;
+  optional double field_id=-1 total_amount;
+  optional double field_id=-1 congestion_surcharge;
+  optional double field_id=-1 Airport_fee;
+  optional double field_id=-1 cbd_congestion_fee;
+}
+
+
+=== oct ====
+<pyarrow._parquet.ParquetSchema object at 0x000002A274EFE480>
+required group field_id=-1 schema {
+  optional int32 field_id=-1 VendorID;
+  optional int64 field_id=-1 tpep_pickup_datetime (Timestamp(isAdjustedToUTC=false, timeUnit=microseconds, is_from_converted_type=false, force_set_converted_type=false));
+  optional int64 field_id=-1 tpep_dropoff_datetime (Timestamp(isAdjustedToUTC=false, timeUnit=microseconds, is_from_converted_type=false, force_set_converted_type=false));
+  optional int64 field_id=-1 passenger_count;
+  optional double field_id=-1 trip_distance;
+  optional int64 field_id=-1 RatecodeID;
+  optional binary field_id=-1 store_and_fwd_flag (String);
+  optional int32 field_id=-1 PULocationID;
+  optional int32 field_id=-1 DOLocationID;
+  optional int64 field_id=-1 payment_type;
+  optional double field_id=-1 fare_amount;
+  optional double field_id=-1 extra;
+  optional double field_id=-1 mta_tax;
+  optional double field_id=-1 tip_amount;
+  optional double field_id=-1 tolls_amount;
+  optional double field_id=-1 improvement_surcharge;
+  optional double field_id=-1 total_amount;
+  optional double field_id=-1 congestion_surcharge;
+  optional double field_id=-1 Airport_fee;
+  optional double field_id=-1 cbd_congestion_fee;
+}
+
+
+=== nov ====
+<pyarrow._parquet.ParquetSchema object at 0x000002A274F3F780>
+required group field_id=-1 schema {
+  optional int32 field_id=-1 VendorID;
+  optional int64 field_id=-1 tpep_pickup_datetime (Timestamp(isAdjustedToUTC=false, timeUnit=microseconds, is_from_converted_type=false, force_set_converted_type=false));
+  optional int64 field_id=-1 tpep_dropoff_datetime (Timestamp(isAdjustedToUTC=false, timeUnit=microseconds, is_from_converted_type=false, force_set_converted_type=false));
+  optional int64 field_id=-1 passenger_count;
+  optional double field_id=-1 trip_distance;
+  optional int64 field_id=-1 RatecodeID;
+  optional binary field_id=-1 store_and_fwd_flag (String);
+  optional int32 field_id=-1 PULocationID;
+  optional int32 field_id=-1 DOLocationID;
+  optional int64 field_id=-1 payment_type;
+  optional double field_id=-1 fare_amount;
+  optional double field_id=-1 extra;
+  optional double field_id=-1 mta_tax;
+  optional double field_id=-1 tip_amount;
+  optional double field_id=-1 tolls_amount;
+  optional double field_id=-1 improvement_surcharge;
+  optional double field_id=-1 total_amount;
+  optional double field_id=-1 congestion_surcharge;
+  optional double field_id=-1 Airport_fee;
+  optional double field_id=-1 cbd_congestion_fee;
+}
+
+
+=== dec ====
+<pyarrow._parquet.ParquetSchema object at 0x000002A273589C80>
+required group field_id=-1 schema {
+  optional int32 field_id=-1 VendorID;
+  optional int64 field_id=-1 tpep_pickup_datetime (Timestamp(isAdjustedToUTC=false, timeUnit=microseconds, is_from_converted_type=false, force_set_converted_type=false));
+  optional int64 field_id=-1 tpep_dropoff_datetime (Timestamp(isAdjustedToUTC=false, timeUnit=microseconds, is_from_converted_type=false, force_set_converted_type=false));
+  optional int64 field_id=-1 passenger_count;
+  optional double field_id=-1 trip_distance;
+  optional int64 field_id=-1 RatecodeID;
+  optional binary field_id=-1 store_and_fwd_flag (String);
+  optional int32 field_id=-1 PULocationID;
+  optional int32 field_id=-1 DOLocationID;
+  optional int64 field_id=-1 payment_type;
+  optional double field_id=-1 fare_amount;
+  optional double field_id=-1 extra;
+  optional double field_id=-1 mta_tax;
+  optional double field_id=-1 tip_amount;
+  optional double field_id=-1 tolls_amount;
+  optional double field_id=-1 improvement_surcharge;
+  optional double field_id=-1 total_amount;
+  optional double field_id=-1 congestion_surcharge;
+  optional double field_id=-1 Airport_fee;
+  optional double field_id=-1 cbd_congestion_fee;
+}
+
+All match
