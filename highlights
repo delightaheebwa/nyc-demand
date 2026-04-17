@@ -6,3 +6,6 @@ The other mistake i made was sticking to remote URLs instead of doing a one-time
 DuckDB got it done fairly quickly... just under 2 minutes for each parquet file!
 ![alt text](image-3.png)
 I knew it was a lot of data but 50 million rows is quite a lot!
+More kernel challenges
+![alt text](image-4.png)
+![alt text](image-5.png)
