@@ -9,3 +9,34 @@ I knew it was a lot of data but 50 million rows is quite a lot!
 More kernel challenges
 ![alt text](image-4.png)
 ![alt text](image-5.png)
+My choice for the columns to focus on was based on this:
+2. How pricing works for NYC street‑hail taxis
+For a normal yellow cab you wave down on the street:
+
+The driver is required to turn on the meter when the trip starts for any ride that isn’t pre‑arranged.
+
+The fare is calculated during the trip by a set formula:
+
+$3.00 initial charge.
+
+$0.70 per 1/5 mile above 12 mph or per 60 seconds in slow traffic or stopped.
+
+Plus fixed surcharges such as:
+
+$0.50 MTA State Surcharge (most city/nearby county trips).
+
+$1.00 Improvement Surcharge.
+
+$1.00 overnight surcharge (8pm–6am).
+
+$2.50 rush‑hour weekday surcharge (4pm–8pm).
+
+Congestion surcharge (e.g., $2.50 for yellow taxis when the trip touches Manhattan south of 96th St).
+
+Because it’s metered and depends on traffic and route, riders normally don’t know the exact final amount beforehand, only a rough guess.
+
+So: in a typical NYC street‑hail, people do not get a precise price up front, but they know the pricing rules posted inside the cab and on the Taxi & Limousine Commission (TLC) website, and may use that to estimate before deciding.
+
+Link: https://www.nyc.gov/site/tlc/passengers/taxi-fare.page
+
+And this too: https://www.perplexity.ai/search/in-nyc-do-people-know-the-amou-Obm_onPuQhm_.iKjfcQdug#2

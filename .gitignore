@@ -6,3 +6,5 @@ __pycache__/
 months_schema
 highlights
 data/
+.conda/
+.conda_clean/
