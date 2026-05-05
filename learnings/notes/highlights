@@ -47,3 +47,18 @@ For negative fares: https://www.perplexity.ai/search/in-nyc-tlc-do-customers-kno
 note to self: Clean up variable names
 
 I learnt that: Depending on working directory, that relative path can resolve wrong (for example from notebooks/ instead of project root), so Polars could not find the input parquet and the save cell failed. Working directory is determined on where the kernel first ran.
+
+First training run at threshold 0.5:
+ROC AUC:  0.5998477812629393
+
+PR AUC (for multi-passenger):  0.25919607350376317
+
+Classification report:
+               precision    recall  f1-score   support
+
+           0       0.84      0.57      0.68   5665361
+           1       0.25      0.57      0.35   1399285
+
+    accuracy                           0.57   7064646
+   macro avg       0.55      0.57      0.51   7064646
+weighted avg       0.73      0.57      0.62   7064646
