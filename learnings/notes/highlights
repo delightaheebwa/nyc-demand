@@ -66,3 +66,25 @@ weighted avg       0.73      0.57      0.62   7064646
 
 Log‑uniform sampling lets you “jump” multiplicatively (e.g. ×0.1, ×10) across a huge range of C, so you cover more ground in terms of distinct regularization regimes (very strong → moderate → very weak) with the same number of trials.
 
+I was making a big mistake with my feature_cols:
+1. Feature Meaning and Target Leakage (The "When" of Data)
+Look at your feature_cols. You are using total_amount alongside trip_distance to predict is_multi.
+
+Question to ask yourself: When would this model be used in the real world? If the goal is to predict a multi-passenger trip at the time of booking/pickup, do you actually have the total_amount available yet?
+Concept: Including information that isn't available at prediction time or is influenced by the target is called Data Leakage
+
+Linear models (like Logistic Regression) handle categorical variables best when they are transformed into separate binary columns for each category. This is called One-Hot Encoding. (e.g., instead of one column with ID 10, you have a column called is_zone_10 which is 1 or 0).
+
+This is a great catch, and it highlights a classic friction point between **static type checkers** (like Pylance) and **runtime execution**.
+
+### The "Why"
+The operator `>` is exactly the right one to use for a NumPy array. At runtime, since this is a standard binary classification, LightGBM will return a standard NumPy array of floats, and `(y_pred_proba > 0.5)` will work perfectly.
+
+However, Pylance doesn't run your code; it only reads the library's type hints. When it looks at the `predict()` function, it sees that globally, `predict` *can* return things like sparse matrices (`spmatrix`) or lists under certain specific conditions. Since standard Python lists don't support the `>` operator with a float, Pylance conservatively throws a warning.
+
+### The Fix
+You don't need a different operator; you just need to reassure Pylance that `y_pred_proba` is a NumPy array. 
+
+**Question for you:** How might you explicitly wrap or convert `y_pred_proba` into a NumPy array right before the comparison so that Pylance is satisfied? (Hint: Think about fundamental `numpy` functions for array creation).
+
+By wrapping it in np.array(y_pred_proba), you are explicitly telling Pylance, "I guarantee this data is going to be a NumPy array." That strips away all the other potential types (spmatrix, list) that it inherited from the predict() function signature, entirely clearing the warning.
