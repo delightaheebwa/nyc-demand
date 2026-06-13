@@ -20,9 +20,9 @@ A data science project that investigates NYC Yellow Taxi trip patterns — from 
 ```
 NYC TLC Parquet Data
         |
-    cleaning.ipynb      Data acquisition, validation, deduplication
+    notebooks/cleaning.ipynb      Data acquisition, validation, deduplication
         |
-    analysis.ipynb      EDA, summary stats, visualizations
+    notebooks/analysis.ipynb      EDA, summary stats, visualizations
         |
     train_model.py      Feature engineering + Logistic Regression
         |
@@ -43,7 +43,7 @@ nyc-demand/
   app.py                          Streamlit web application
   train_model.py                  Model training script
   requirements.txt                Pinned Python dependencies
-  .gitignore                      Excludes data/, venv, checkpoints
+  .gitignore                      Excludes data/, .venv, checkpoints
   notebooks/
     cleaning.ipynb                Data acquisition and cleaning
     analysis.ipynb                Exploratory data analysis
@@ -72,8 +72,8 @@ git clone https://github.com/delightaheebwa/nyc-demand.git
 cd nyc-demand
 
 # Create and activate a virtual environment
-python -m venv venv
-source venv/bin/activate       # On Windows: venv\Scripts\activate
+python -m venv .venv
+source .venv/bin/activate      # On Windows: .venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
@@ -155,11 +155,12 @@ print(f"Multi-passenger probability: {proba:.2%}")
 ### Training a model with custom parameters
 
 ```python
+import numpy as np
+import polars as pl
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.linear_model import LogisticRegression
-import polars as pl
 
 # Feature engineering
 df = pl.read_parquet("data/processed/cleaned_yellow_taxi.parquet") \
@@ -170,7 +171,18 @@ df = pl.read_parquet("data/processed/cleaned_yellow_taxi.parquet") \
     ]) \
     .with_columns([
         (pl.col("pickup_dow").is_in([6, 7])).cast(pl.Int8).alias("is_weekend"),
+        (pl.col("pickup_hour").cast(pl.Float32)
+         .map_elements(lambda h: np.sin(2 * np.pi * h / 24.0))
+         .alias("pickup_hour_sin")),
+        (pl.col("pickup_hour").cast(pl.Float32)
+         .map_elements(lambda h: np.cos(2 * np.pi * h / 24.0))
+         .alias("pickup_hour_cos")),
     ])
+
+# Target and feature columns
+y = df.select("is_multi").to_pandas().values.ravel()
+X = df.select(["pickup_hour_sin", "pickup_hour_cos",
+               "pickup_dow", "is_weekend", "PULocationID"]).to_pandas()
 
 # Build pipeline
 preprocess = ColumnTransformer([
@@ -184,6 +196,7 @@ clf = Pipeline([
 ])
 
 clf.fit(X, y)
+print(f"Model trained. Coefficients shape: {clf.named_steps['model'].coef_.shape}")
 ```
 
 ---
